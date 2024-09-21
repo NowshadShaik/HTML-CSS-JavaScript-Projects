@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+
+    <div class="calculator">
+        <table>
+            <tr>
+                <th colspan="4">
+                    <input type="text" maxlength="10" id="input" disabled></input>
+                </th>
+            </tr>
+            <tr>
+                <td class="reset" onclick="clearFunction()">AC</td>
+                <td class="operators" onclick="putVal('%')">%</td>
+                <td class="cancel" onclick="cancelFunction()">clear</td>
+                <td class="operators" onclick="putVal('/')">/</td>
+            </tr>
+            <tr>
+                <td class="numbers" onclick="putVal(1)">1</td>
+                <td class="numbers" onclick="putVal(2)">2</td>
+                <td class="numbers" onclick="putVal(3)">3</td>
+                <td class="operators" onclick="putVal('x')">x</td>
+            </tr>
+            <tr>
+                <td class="numbers" onclick="putVal(4)">4</td>
+                <td class="numbers" onclick="putVal(5)">5</td>
+                <td class="numbers" onclick="putVal(6)">6</td>
+                <td class="operators" onclick="putVal('-')">-</td>
+            </tr>
+            <tr>
+                <td class="numbers" onclick="putVal(7)">7</td>
+                <td class="numbers" onclick="putVal(8)">8</td>
+                <td class="numbers" onclick="putVal(9)">9</td>
+                <td class="operators" onclick="putVal('+')">+</td>
+            </tr>
+            <tr>
+                <td class="numbers" onclick="putVal('00')">00</td>
+                <td class="numbers" onclick="putVal(0)">0</td>
+                <td class="numbers" onclick="putVal('.')">.</td>
+                <td class="equals" onclick="solveExpression()">=</td>
+            </tr>
+        </table>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    color:mediumaquamarine
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    background-color: rgb(38, 48, 56);
+    border-radius: 20px;
+    border-spacing: 15px;
+}
+
+input {
+    border: none;
+    background-color: rgb(60, 48, 56);
+    width: 380px;
+    height: 80px;
+    border-radius: 20px;
+    font-size: 40px;
+    padding: 10px;
+    text-align: right;
+    color: white
+}
+
+td, th {
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    color: white;
+}
+
+.numbers {
+    background-color: rgb(75, 75, 20);
+    border-radius: 80px;
+}
+.numbers:hover {
+    background-color: white;
+    color: black;
+}
+
+.operators {
+    background-color: rgb(55, 55, 10);
+    border-radius: 80px;
+}
+.operators:hover {
+    background-color: black;
+    color: white;
+}
+
+.cancel {
+    background-color: rgb(55, 55, 105);
+    border-radius: 80px;
+}
+.cancel:hover {
+    background-color: rgb(0, 0, 255);
+    color: black;
+}
+
+.equals {
+    background-color: rgb(55, 105, 10);
+    border-radius: 80px;
+}
+.equals:hover {
+    background-color: rgb(0, 255, 0);
+    color: black;
+}
+
+.reset {
+    background-color: rgb(105, 55, 55);
+    border-radius: 80px;
+}
+.reset:hover {
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
