@@ -2,11 +2,23 @@ body {
     background-color: black;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     font-family:'Courier New', Courier, monospace;
     font-size: 50px;
-    color:mediumaquamarine
+    color:mediumaquamarine;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    text-align: center;
+    font-size: 40px;
+    color: mediumaquamarine;
+}
+
+a:hover {
+    color: white;
 }
 
 .calculator {
