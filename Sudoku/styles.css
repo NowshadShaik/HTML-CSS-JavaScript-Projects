@@ -1,61 +1,101 @@
-body {
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
     background-color: black;
 }
 
 h1 {
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 50px;
-    color:rgb(38, 118, 184);
+    font-size: 40px;
 }
 
-#board {
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(110, 160, 214);;
+}
+
+.container {
     display: flex;
+    align-items: center;
     justify-content: center;
+
+    width: 100%;
+    height: 600px;
+    column-gap: 20px;
 }
 
-#game {
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(38, 118, 184);
-    border-collapse: collapse;
-    margin: 6px;
+.game {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border: 2px solid rgb(49, 49, 205);
 }
 
+.options {
+    width: 375px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
 
-#game td {
-    font-family:'Courier New', Courier, monospace;
-    border: 1px solid rgb(38, 118, 184);
-    padding: 2px;
-    font-size: 25px;
+.opt-row1, .opt-row2, .opt-row3, .opt-row4 {
+    display: flex;
+    column-gap: 5px;
+}
+
+.opt-row1 {
+    column-gap: 28px;
+    margin-bottom: 5px;
+}
+
+.opt-num {
+    border: none;
+    border-radius: 5px;
+    width: 105px;
+    height: 105px;
+    background-color: rgb(33, 36, 37);
+    color: rgb(110, 160, 214);
+    font-size: 40px;
+    font-weight: 100;
+    transition: background-color 0.15s;
+}
+
+.opt-num:hover, .new-game:hover, .opt-opt:hover {
+    background-color: rgb(55, 59, 60);
+}
+
+.new-game {
+    background-color: rgb(33, 36, 37);
+    width: 325px;
+    height: 70px;
     text-align: center;
-    width: 50px;
-    height: 50px;
-}
-
-#game tr:nth-child(3), #game tr:nth-child(6), #game tr:nth-child(9) {
-    border-bottom: 2px solid rgb(38, 118, 184);
-}
-
-#game td:nth-child(3), #game td:nth-child(6), #game td:nth-child(9) {
-    border-right: 2px solid rgb(38, 118, 184);
-}
-
-
-
-
-
-
-
-#options {
-    background-color: rgb(0, 0, 0);
+    align-items: center;
     color: white;
-    border: 1px solid black;
-    border-collapse: collapse;
-    margin: 6px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
 }
 
+.opt-opt {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(33, 36, 37);
+    border-radius: 40px;
+    color: white;
+    border: 1px solid rgb(110, 160, 214);
+    font-size: 30px;
+    color: rgb(110, 160, 214);
+    margin-bottom: 5px;
+}
 
-#options td {
-    border: 1px solid black;
-    font-family:'Courier New', Courier, monospace;
+.opt-row1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

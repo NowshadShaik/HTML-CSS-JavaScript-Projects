@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sudoku</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
-    <h1>Sudoku</h1>
+    <h1>SUDOKU</h1>
 
-    <div id="board">
-      <!-- Here the game board will be added from scripts -->
-      <table id="game"></table>
-
-      <table id="options">
-        <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-        </tr>
-        <tr>
-          <td>Reset</td>
-          <td>Solve</td>
-          <td>New Game</td>
-        </tr>
-      </table>
+    <div class="container">
+      <div class="game">game</div>
+      <div class="options">
+        <div class="opt-row1">
+          <div>
+            <button class="opt-opt">&#8634;</button>
+            <p>Undo</p>
+          </div>
+          <div>
+            <button class="opt-opt">b</button>
+            <p>Undo</p>
+          </div>
+          <div>
+            <button class="opt-opt">c</button>
+            <p>Undo</p>
+          </div>
+          <div>
+            <button class="opt-opt">d</button>
+            <p>Undo</p>
+          </div>
+        </div>
+        <div class="opt-row2">
+          <button class="opt-num">1</button>
+          <button class="opt-num">2</button>
+          <button class="opt-num">3</button>
+        </div>
+        <div class="opt-row3">
+          <button class="opt-num">4</button>
+          <button class="opt-num">5</button>
+          <button class="opt-num">6</button>
+        </div>
+        <div class="opt-row4">
+          <button class="opt-num">7</button>
+          <button class="opt-num">8</button>
+          <button class="opt-num">9</button>
+        </div>
+        <button class="new-game">New Game</button>
+      </div>
     </div>
-
-    <script src="scripts.js"></script>
   </body>
 </html>
