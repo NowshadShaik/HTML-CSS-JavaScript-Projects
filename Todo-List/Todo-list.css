@@ -1,37 +1,71 @@
 body {
-    font-family: Arial;
-
+    margin: 0px;
+    font-family: Roboto, Arial, Helvetica;
+    padding-top: 150px;
+    padding-left: 300px;
 }
 
-.todo-grid, .todo-input {
-    display: grid;
-    grid-template-columns: 200px 150px 100px;
-    column-gap: 10px;
-    row-gap: 10px;
-    align-items: center;
-}
-
-.todo-input {
-    margin-bottom: 10px;
-    align-items: stretch;
-}
-
-
-.name-input, .date-input {
-    font-size: 15px;
-    padding: 6px;
-}
-
-.add-todo-button, .delete-todo-button {
-    background-color: green;
+.top-navbar {
+    background-color: black;
     color: white;
-    font-size: 15px;
-    border: none;
+    font-size: 35px;
+    padding-left: 40px;
+    box-shadow: 20px 10px 10px lightgrey;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    left: 250px;
+    right: 0px;
+    top: 0px;
+    height: 100px;
+    z-index: 1;
+}
+
+.left-menu {
+    background-color: black;
+    color: white;
+    box-shadow: 10px 0px 10px lightgrey;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 250px;
+}
+
+.menu-header {
+    font-size: 25px;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.menu-option {
+    background-color: black;
+    font-size: 20px;
+    width: 230px;
+    height: 50px;
+    padding-left: 20px;
+    align-content: space-evenly;
+    transition: 0.15s;
+}
+
+.menu-option:hover {
+    background-color: rgb(76, 76, 76);
+    font-size: 25px;
+    width: 250px;
+    height: 60px;
     cursor: pointer;
 }
 
-.delete-todo-button {
-    background-color: darkred;  
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+.todo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

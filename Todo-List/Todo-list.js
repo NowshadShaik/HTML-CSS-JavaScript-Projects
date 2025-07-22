@@ -1,63 +1,42 @@
-const todoList = [];
+const todoList = [{
+  id: '1',
+  name: 'Task-1',
+  date: '23/07/2025'
+},
+{
+  id: '2',
+  name: 'Task-2',
+  date: '24/07/2025'
+},
+{
+  id: '3',
+  name: 'Task-3',
+  date: '25/07/2025'
+},
+{
+  id: '4',
+  name: 'Task-4',
+  date: '26/07/2025'
+}]
 
-function addTodo() {
-  const inputElement = document.querySelector('.name-input');
-  const name = inputElement.value;
-  const dateElement = document.querySelector('.date-input');
-  const date = dateElement.value;
 
-  const todoElement = {
-    name,
-    date
-  };
 
-  todoList.push(todoElement);
-  inputElement.value = "";
 
-  renderTodoList();
-}
+function renderTodo() {
+  let gridHtml = '';
 
-function renderTodoList() {
-  let todoListHtml = '';
-
-  /* 
-  // BASIC FOR
-  for (let i = 0; i < todoList.length; i++) {
-    let element = `
-                    <div>${todoList[i].name}</div>
-                    <div>${todoList[i].date}</div>
-                    <button onclick="removeTodo(${i}, 1)" class="delete-todo-button">Delete</button>
-                  `;
-    todoListHtml += element;
-  }
-  */
-
-  /*
-  // FOR EACH with anonymous function for CALLBACK with array for each method
-  todoList.forEach(function (value, index) {
-    let element = `
-                    <div>${value.name}</div>
-                    <div>${value.date}</div>
-                    <button onclick="removeTodo(${index}, 1)" class="delete-todo-button">Delete</button>
-                  `;
-    todoListHtml += element;
-  });
-  */
-
-  // Arrow function 
   todoList.forEach((value, index) => {
     let element = `
-                    <div>${value.name}</div>
-                    <div>${value.date}</div>
-                    <button onclick="removeTodo(${index}, 1)" class="delete-todo-button">Delete</button>
-                  `;
-    todoListHtml += element;
-  });
+    <div>
+      <div>${value.id}</div>
+      <div>${value.name}</div>
+      <div>${value.date}</div>
+    </div>
+    `;
+    gridHtml += element;
+  })
 
-  document.querySelector(".todo-list").innerHTML = todoListHtml;
+  document.querySelector('.todo-grid').innerHTML = gridHtml;
 }
 
-function removeTodo(index, count) {
-  todoList.splice(index, count);
-  renderTodoList();
-}
+renderTodo();
