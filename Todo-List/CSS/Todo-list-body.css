@@ -49,26 +49,28 @@
     row-gap: 10px;
 }
 
+.grid-header, .grid-item {
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .grid-header {
     background-color: black;
-    color: white;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 5px;
 }
-
 .grid-item {
     background-color: rgb(100, 100, 100);
-    color: white;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 5px;
+    padding: 0px 20px;
 }
 
-.status-button {
-    background-color: rgb(100, 100, 100);
+.grid-item-status {
+    padding: 0px;
+}
+
+.status-button, .status-button-completed {
     color: white;
     border: none;
     cursor: pointer;
@@ -77,6 +79,15 @@
     border-radius: 5px;
     transition: 0.15s;
     font-size: 15px;
+}
+
+.status-button {
+    background-color: rgb(100, 100, 100);
+}
+
+.status-button-completed {
+    background-color: black;
+
 }
 
 .status-button:hover {
