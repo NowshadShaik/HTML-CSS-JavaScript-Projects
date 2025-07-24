@@ -1,45 +1,45 @@
-export const todoDefaultData = {
+export const todoTestData = {
   idCounter: 7,
   list : [{
-            id: '1',
+            id: 1,
             name: 'Task-1',
-            date: '23/07/2025',
+            dueDate: '2025-07-21',
             completed: true
           },
           {
-            id: '2',
+            id: 2,
             name: 'Task-2',
-            date: '24/07/2025',
-            completed: true
+            dueDate: '2025-07-22',
+            completed: false
           },
           {
-            id: '3',
+            id: 3,
             name: 'Task-3',
-            date: '25/07/2025',
+            dueDate: '2025-07-23',
             completed: true
           },
           {
-            id: '4',
+            id: 4,
             name: 'Task-4',
-            date: '26/07/2025',
+            dueDate: '2025-07-24',
             completed: false
           },
           {
-            id: '5',
+            id: 5,
             name: 'Task-5',
-            date: '25/07/2025',
+            dueDate: '2025-07-25',
             completed: false
           },
           {
-            id: '6',
+            id: 6,
             name: 'Task-6',
-            date: '26/07/2025',
+            dueDate: '2025-07-26',
             completed: false
           },
           {
-            id: '7',
+            id: 7,
             name: 'Task-7',
-            date: '27/07/2025',
+            dueDate: '2025-07-27',
             completed: false
           }]
 }

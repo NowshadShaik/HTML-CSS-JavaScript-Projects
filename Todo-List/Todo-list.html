@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>ToDo List</title>
-    <link rel="stylesheet" href="./CSS/Todo-list-menu.css"/>
+    <link rel="stylesheet" href="./CSS/Todo-list-nav.css"/>
     <link rel="stylesheet" href="./CSS/Todo-list-body.css"/>
   </head>
   <body>
@@ -11,25 +11,29 @@
     </div>
 
     <div class="left-menu">
-      <div class="menu-header">Menu</div>
-      <div class="menu-option">All Tasks</div>
-      <div class="menu-option">Due today</div>
-      <div class="menu-option">Due this week</div>
-      <div class="menu-option">Due this month</div>
-      <div class="menu-option">Overdue tasks</div>
-      <div class="menu-option">Completed tasks</div>
+      <div class="menu-option" data-option-id="1">All Tasks</div>
+      <div class="menu-option" data-option-id="2">Due today</div>
+      <div class="menu-option" data-option-id="3">Due in next 7 days</div>
+      <div class="menu-option" data-option-id="4">Overdue tasks</div>
+      <div class="menu-option" data-option-id="5">Completed tasks</div>
     </div>
 
     <div class="todo-list">
       <div class="add-todo">
-        <input type="text" class="add-todo-text" placeholder="Add task here">
-        <input type="date" class="add-todo-date">
+        <div>
+          <div class="add-todo-label">Task Description:</div>
+          <input type="text" class="add-todo-text" placeholder="Add task here">
+        </div>
+        <div>
+          <div class="add-todo-label">DueDate:</div>
+          <input type="date" class="add-todo-date">
+        </div>
         <button class="add-todo-button">Add Task</button>
       </div>
 
-      <div class="todo-tasks-grid">
+      <!-- <div class="test-data-section"></div> -->
 
-      </div>
+      <div class="todo-tasks-grid"></div>
 
     </div>
     <script src="JS/Todo-list.js" type="module"></script>
