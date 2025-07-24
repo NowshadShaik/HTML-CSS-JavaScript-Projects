@@ -58,8 +58,5 @@ body {
 
 .menu-option:hover {
     background-color: rgb(100, 100, 100);
-    font-size: 25px;
-    width: 250px;
-    height: 60px;
     cursor: pointer;
 }
