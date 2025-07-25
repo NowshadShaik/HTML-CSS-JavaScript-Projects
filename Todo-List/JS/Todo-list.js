@@ -1,16 +1,7 @@
-import { todoTestData } from "./Todo-test-data.js";
+import { getTestData } from "./Todo-test-data.js";
 
 let todoData = JSON.parse(localStorage.getItem('todoData'));
 let currentOption = 1;
-
-
-// function addTestData() {
-//   if('todoData' in localStorage){
-//     let testDataElement = document.querySelector('.test-data-section');
-//     testDataElement.innerHTML = `<button>Generate test data</button>`;
-//   }
-// }
-// addTestData();
 
 function renderTodoList() {
   let gridHtml = `
@@ -143,6 +134,15 @@ function taskDueIn(date1, date2, max) {
   return dueIn;
 }
 
+function deleteAllData() {
+  todoData = {
+      idCounter: 0,
+      list: []
+    };
+  saveToLocalStorage();
+  renderTodoList();
+}
+
 function saveToLocalStorage() {
   localStorage.setItem('todoData', JSON.stringify(todoData));
 }
@@ -155,3 +155,12 @@ document.querySelectorAll('.menu-option').forEach((option) => {
 });
 
 document.querySelector('.add-todo-button').addEventListener('click', () => addTask());
+document.querySelector('.gen-test-data').addEventListener('click', () => generateTestData());
+document.querySelector('.del-all-data').addEventListener('click', () => deleteAllData());
+
+
+function generateTestData() {
+  todoData = getTestData();
+  saveToLocalStorage();
+  renderTodoList();
+}
