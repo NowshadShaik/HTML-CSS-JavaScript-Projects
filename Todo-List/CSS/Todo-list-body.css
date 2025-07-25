@@ -8,29 +8,6 @@
 
 }
 
-/* .test-data-section{
-    background-color: lightgray;
-    display: flex;
-    align-items: center;
-    margin: 0px 50px;
-}
-
-.test-data-section button {
-    width: 150px;
-    height: 40px;
-    background-color: rgb(100, 100, 100);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
-.test-data-section button:hover {
-    background-color: black;
-    cursor: pointer;
-} */
-
 .add-todo-label {
     display: inline-block;
     font-weight: bold;
